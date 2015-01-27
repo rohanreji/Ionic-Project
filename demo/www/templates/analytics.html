@@ -9,10 +9,20 @@
     </ion-list>-->
 
 
-<canvas id="buyers" width="600" height="400"></canvas>
+<canvas barchart legend=true options="options" data="chart" ></canvas>
 
 
-
-    <h1>Usage Analytics</h1>
+<div class="usage-stats">
+    <p>Last 3 months</p>
+    <p>Area1 - {{area1usage}} times</p>
+    <p>Area2 - {{area2usage}} times</p>
+    <p>Area3 - {{area3usage}} times</p>
+</div>
+<p id="footer-analytics"><br>Recommended buying {{recplan}}</p>
+<p id="saved">You save OMR {{amountsave}}</p>
   </ion-content>
+}
+}
+}
+}
 </ion-view>

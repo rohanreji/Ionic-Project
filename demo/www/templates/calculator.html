@@ -1,5 +1,17 @@
 <ion-view view-title="Calculator">
   <ion-content>
-    <h1>Fee Calculator</h1>
+    
+   <div ng-controller="MyCtrl" id="controller">
+	    <br>
+	    Enter Details:<br>Select Area
+  		<select id="areaselect" ng-model="myArea" ng-options="area.name for area in areas" ng-change="dosth(myArea)">
+    		<option value="">-- choose area --</option>
+  		</select>
+  
+  
+ 		 <hr/>
+
+	</div>
+       
   </ion-content>
 </ion-view>

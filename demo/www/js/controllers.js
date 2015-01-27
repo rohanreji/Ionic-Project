@@ -1,4 +1,6 @@
-angular.module('starter.controllers', [])
+
+
+angular.module('starter.controllers', ["angles"])
 
 
 .service('sharedProperties', function () {
@@ -106,9 +108,44 @@ api call for the details of ticket here..
     }
  
 })
+/*
+api call to get the historical data.
+*/
 .controller('ChartCtrl', function($scope, $stateParams,sharedProperties) {
-   
+   $scope.chart = {
+    labels : ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    datasets : [
+        {
+            fillColor : "rgba(151,187,205,0)",
+            strokeColor : "#e67e22",
+            pointColor : "rgba(151,187,205,0)",
+            pointStrokeColor : "#e67e22",
+            data : [4, 3, 5, 4, 6]
+        }
+       
+    ], 
+};
+  $scope.area1usage='10';
+  $scope.area2usage='30';
+  $scope.area3usage='15';
+  $scope.recplan="6 months parking for all areas";
+  $scope.amountsave="50";
 })
+
+
+.controller('MyCtrl', function($scope, $stateParams,sharedProperties) {
+  $scope.areas = [
+  {name:'Area1', id:'1'},
+  {name:'WereNam', id:'2'},
+  {name:'Namen', id:'3'},
+  {name:'Tammaa', id:'4'},
+  {name:'Sean',id:'5'}
+];
+$scope.dosth = function(vari) {
+  console.log(vari.name);
+};
+})
+
 
 .controller('PlaylistCtrl', function($scope, $stateParams,sharedProperties) {
     $scope.contid=sharedProperties.getProperty()[$stateParams.playlistId-1];

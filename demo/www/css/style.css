@@ -1,5 +1,31 @@
 
 /* Empty. Add your own CSS if you like */
+#controller{
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#areaselect{
+	width:100%;
+}
+#footer-analytics{
+	margin-left: 20px;
+	color: #2c3e50;
+}
+#saved{
+	margin-left: 20px;
+	color: #c0392b;
+}
+.usage-stats{
+	
+   margin-left: 20px;
+  	padding:20px 20px 20px 20px;
+   background-color: #bdc3c7;
+   text-align: center;
+   color: #2e8ece;
+   margin-right: 20px;
+}
 #container{
    position: absolute;
    top: 50%;

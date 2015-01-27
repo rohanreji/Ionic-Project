@@ -5,9 +5,9 @@
     <div class="list">
         <ion-item ng-repeat="entry in entries  | orderBy:'length':false" class="item " href="#/app/playlists/{{entry.id}}">
           <!--  <b>{{entry}}</b><br>-->
-            <b>Reservation No: {{entry.title}}</b>
-			 <b>{{entry.parkingdate}}, {{entry.starttime}}-{{entry.endtime}}</b>
-			 <b>{{entry.length}} hours</b>
+            <b>Reservation No: {{entry.title}}</b><br>
+			 <b>{{entry.parkingdate}}, {{entry.starttime}}-{{entry.endtime}}</b><br>
+			 <b>{{entry.length}} hours</b><br>
 
 			 <span ng-bind-html="entry.contentSnippet"></span>
             

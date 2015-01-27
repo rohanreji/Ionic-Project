@@ -1,0 +1,68 @@
+
+/* Empty. Add your own CSS if you like */
+#container{
+   position: absolute;
+   top: 50%;
+   margin-top: -200px;/* half of #content height*/
+   left: 0;
+   width: 100%;
+
+}
+.button-det
+{
+	
+    width: 50%;
+}
+.ticket-content{
+	width: 624px;
+   margin-left: 20px;
+   margin-right: auto;
+   height: 395px;
+}
+.ticket-det{
+font-size: 24px;
+    
+}
+.parking-back{
+	position: relative;
+	background-color: #7f8c8d;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: -20px;
+	
+}
+.parking-det{
+	
+	color: #e74c3c !important;
+	text-align: left;
+	display: inline-block;
+	margin-left: -10px;
+}
+.parking-time{
+	color:#e74c3c;
+	text-align: right;
+
+	width: 100%;
+    margin: 0 auto;
+
+}
+.parking-time #time-remaining{
+	font-size: 24px;
+	display: inline-block;
+    text-align: right;
+    cursor: default;
+    color: #f1c40f;
+   
+}
+.parking-time #minutes{
+	display: inline-block;
+    text-align: right;
+    cursor: default;
+  
+}
+#details{
+	font-size: 11px;
+	
+}
+

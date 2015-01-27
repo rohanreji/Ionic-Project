@@ -1,0 +1,17 @@
+<ion-view view-title="Parking Ticket">
+  <ion-content ng-controller="FeedController" ng-init="init()">
+    <h1>Parking Ticket</h1>
+
+    <div class="list">
+        <ion-item ng-repeat="entry in entries  | orderBy:'length':false" class="item " href="#/app/playlists/{{entry.id}}">
+          <!--  <b>{{entry}}</b><br>-->
+            <b>Reservation No: {{entry.title}}</b>
+			 <b>{{entry.parkingdate}}, {{entry.starttime}}-{{entry.endtime}}</b>
+			 <b>{{entry.length}} hours</b>
+
+			 <span ng-bind-html="entry.contentSnippet"></span>
+            
+         </ion-item>
+    </div>
+  </ion-content>
+</ion-view>
